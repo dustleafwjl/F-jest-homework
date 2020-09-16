@@ -5,7 +5,7 @@ describe("expect.equal", () => {
   });
   test("TODO 2", () => {
     // TODO 2: to replace "matcher"
-    expect(0.2 + 0.1).toBeGreaterThan(0.3);
+    expect(0.2 + 0.1).toBeCloseTo(0.3);
   });
   test("TODO 3", () => {
     // TODO 3: to replace "matcher"
@@ -14,7 +14,7 @@ describe("expect.equal", () => {
   test("TODO 4", () => {
     // TODO 4: to replace "matcher"
     const fn = () => {};
-    expect(fn).toBe(expect.any(Function));
+    expect(fn).toBeInstanceOf(Function);
   });
   test("TODO 5", () => {
     // TODO 5: to replace "matcher"
