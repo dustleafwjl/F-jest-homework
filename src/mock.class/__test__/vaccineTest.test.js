@@ -18,7 +18,10 @@ jest.mock("../recipient", () => {
 beforeEach(() => {
   // clear mock here
   Recipient.mockClear();
-  jest.fn().mockClear();
+  // jest.fn().mockClear();
+  // TODO feedback 只需要clear你mock的方法就可以了
+  mockAcceptionInjection.mockClear();
+  mockGetHasAntibodies.mockReset();
 });
 
 describe("inject", () => {

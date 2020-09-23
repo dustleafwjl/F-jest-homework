@@ -16,8 +16,11 @@ describe("register", () => {
   test("should reject with Error when username is invalid", async () => {
     // TODO 20: add test here
     verifyPassword.mockImplementation(() => false);
-    await expect(register("name", "password")).rejects.toThrow(
-      expect.any(Object)
-    );
+
+    // await expect(register("name", "password")).rejects.toThrow(
+    //   expect.any(Object)
+    // );
+    // TODO feedback: 可以测试地更具体一些
+    await expect(register()).rejects.toThrow(Error);
   });
 });
